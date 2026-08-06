@@ -9,7 +9,7 @@ def main():
 		weight_kg = float(input("請輸入體重（公斤）: "))
 
 		if height_cm <= 0 or weight_kg <= 0:
-			print("身高與體重都必須大於 0。")
+			print("身高與體重都必須大於 0")
 			return
 
 		bmi = calculate_bmi(weight_kg, height_cm)

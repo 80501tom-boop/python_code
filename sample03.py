@@ -4,17 +4,17 @@ def calculate_bmi(weight, height):
     return bmi
 def get_bmi_advice(bmi):
     if bmi < 18.5:
-        return "體重過輕"
+        return "BMI值過低,體重過輕"
     elif 18.5 <= bmi < 24:
-        return "體重正常"
+        return "BMI值正常,體重正常"
     elif 24 <= bmi < 27:
-        return "體重過重"
+        return "BMI值過高,體重過重"
     elif 27 <=bmi < 30:
-        return "輕度肥胖"
+        return "BMI值過高,輕度肥胖"
     elif 30 <= bmi < 35:
-        return "中度肥胖"
+        return "BMI值過高,中度肥胖"
     else:
-        return "重度肥胖"
+        return "BMI值過高,重度肥胖"
 
 def main():
     height = float(input("請輸入身高(公尺): "))
